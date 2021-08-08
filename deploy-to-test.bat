@@ -1,0 +1,1 @@
+yarn run build & aws s3 sync C:\Users\efear\Code\game1\build s3://tetris-clone --acl public-read

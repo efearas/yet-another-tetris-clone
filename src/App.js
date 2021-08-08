@@ -1,18 +1,21 @@
-import { useRef, useState, useEffect } from 'react';
-import ImageMove from './ImageMove';
-import ArrayOfDivs  from './ArrayOfDivs';
-import KeyPress from './KeyPress';
+
+import Game from './Game';
+import GameController from './GameController';
+import { StateProvider } from './Store.js';
+
 
 function App() {
 
-  
+
 
 
   return (
     <div>
-      <KeyPress></KeyPress>
-  
-  </div>
+      <StateProvider>
+        <GameController></GameController>
+      </StateProvider>
+
+    </div>
   );
 }
 

@@ -23,4 +23,12 @@ const getMultidimensionalArray = (numberOfRows, numberOfColumns, fillValue) => {
     return arr;
 }
 
-export { getARandomInt, getRandomString, getMultidimensionalArray };
+const transpose = (matrix) => {    
+    return matrix[0].map((row, colIndex) => matrix.map(row2 => row2[colIndex]))        
+}
+
+const reverseColumnsOfAMatrix = (matrix) => {
+    return matrix.map(row => row.map((col, colIndex) => row[row.length-colIndex-1]) )        
+}
+
+export { getARandomInt, getRandomString, getMultidimensionalArray, transpose, reverseColumnsOfAMatrix };

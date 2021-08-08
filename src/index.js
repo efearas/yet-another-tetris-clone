@@ -7,7 +7,7 @@ import Game from './Game';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game></Game>
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );
